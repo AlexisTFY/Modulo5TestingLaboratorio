@@ -5,7 +5,7 @@ import * as promiseTracker from 'react-promise-tracker/lib/trackerHook';
 
 describe('spinner.component spec', () => {
   
-    it('should display the modal component with the loader when promiseInProgress is true', () => {
+    it('Should display the modal component with the loader when promiseInProgress is true', () => {
     
         // Arrange
     jest
@@ -24,7 +24,7 @@ describe('spinner.component spec', () => {
     
   });
 
-  it('should not be mount when promiseInProgress is false', () => {
+  it('Should not be mount when promiseInProgress is false', () => {
     
     // Arrange
     jest
