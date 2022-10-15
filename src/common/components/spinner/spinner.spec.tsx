@@ -16,7 +16,7 @@ describe('spinner.component spec', () => {
     render(<SpinnerComponent />);
 
     const modal = screen.getByRole('presentation');
-    const loader = screen.getByRole('prodialoggressbar');
+    const loader = screen.getByRole('progressbar');
     // Assert
     console.log(loader);
     expect(modal).toBeInTheDocument();
