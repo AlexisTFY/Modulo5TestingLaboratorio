@@ -24,7 +24,7 @@ describe('spinner.component spec', () => {
     
   });
 
-  it('Should not be mount when promiseInProgress is false', () => {
+  it('should not be mount when promiseInProgress is false', () => {
     
     // Arrange
     jest
