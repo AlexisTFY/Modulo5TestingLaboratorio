@@ -9,6 +9,8 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
       - name: Install
-        run: npm ci
+        run: npm install
+      - name: Build
+        run: npm run build
       - name: Tests
         run: npm test
