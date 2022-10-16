@@ -13,6 +13,8 @@
     "type-check:watch": "npm run type-check -- --watch",
     "test": "jest -c ./config/test/jest.js --verbose",
     "test:watch": "npm run test -- --watchAll -i",
+    "test:e2e": "npm start -- start:e2e",
+    "start:e2e": "cypress open",
     "clean": "rimraf dist"
   },
   "repository": {
@@ -35,6 +37,7 @@
     "@material-ui/lab": "4.0.0-alpha.60",
     "@mui/material": "^5.10.9",
     "axios": "^0.21.1",
+    "cypress": "^10.10.0",
     "formik": "^2.2.9",
     "graphql-request": "^3.4.0",
     "immer": "^9.0.5",
@@ -57,6 +60,7 @@
     "@babel/preset-typescript": "^7.14.5",
     "@emotion/babel-plugin": "^11.3.0",
     "@pmmmwh/react-refresh-webpack-plugin": "^0.4.3",
+    "@testing-library/cypress": "^8.0.3",
     "@testing-library/dom": "^8.18.1",
     "@testing-library/jest-dom": "^5.16.2",
     "@testing-library/react": "^12.1.2",
