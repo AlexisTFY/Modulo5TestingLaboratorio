@@ -40,7 +40,7 @@ describe('Login specs', () => {
         cy.findAllByText('Usuario y/o password no válidos');
     })
 
-    it('should navigate to app home when type valid credentials', () => {
+    it('Should navigate to app home when type valid credentials', () => {
         // Arrange
         const user = 'admin';
         const password = 'test';
