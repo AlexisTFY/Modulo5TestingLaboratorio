@@ -4,7 +4,7 @@ import { useConfirmationDialog } from './confirmation-dialog.hook';
 
 describe('useConfirmationDialog specs', () => {
   
-    it('should return an object with the isOpen property set to false when the hook is called', () => {
+    it('Should return an object with the isOpen property set to false when the hook is called', () => {
         // Arrange
 
         // Act
@@ -14,7 +14,7 @@ describe('useConfirmationDialog specs', () => {
         expect(result.current.isOpen).toEqual(false);
     });
 
-    it('should return an object with property itemToDelete with default values when the hook is called', () => {
+    it('Should return an object with property itemToDelete with default values when the hook is called', () => {
         // Arrange
         const defaultItemToDelete: Lookup = { id: '', name: '' };
 
@@ -25,7 +25,7 @@ describe('useConfirmationDialog specs', () => {
         expect(result.current.itemToDelete).toEqual(defaultItemToDelete);
     });
 
-    it('should return an object with onAccept, onClose and onOpenDialog functions when the hook is called', () => {
+    it('Should return an object with onAccept, onClose and onOpenDialog functions when the hook is called', () => {
         // Arrange
 
         // Act
@@ -37,7 +37,7 @@ describe('useConfirmationDialog specs', () => {
         expect(result.current.onOpenDialog).toEqual(expect.any(Function));
     });
 
-    it('should set isOpen to true and itemToDelete to current item when it calls onOpenDialog', () => {
+    it('Should set isOpen to true and itemToDelete to current item when it calls onOpenDialog', () => {
         // Arrange
         const item: Lookup = { id: '01 ', name: 'name' };
 
@@ -52,7 +52,7 @@ describe('useConfirmationDialog specs', () => {
         expect(result.current.itemToDelete).toEqual(item);
     });
 
-    it('should delete the itemToDelete when it calls onAccept', () => {
+    it('Should delete the itemToDelete when it calls onAccept', () => {
         // Arrange
         const item: Lookup = { id: '01 ', name: 'name' };
         const emptyLookup: Lookup = { id: '', name: '' };
@@ -68,7 +68,7 @@ describe('useConfirmationDialog specs', () => {
         expect(result.current.itemToDelete).toEqual(emptyLookup);
     });
 
-    it('should set the isOpen to false when it calls onClose and yhe itemToDelete must reamin as same', () => {
+    it('Should set the isOpen to false when it calls onClose and yhe itemToDelete must reamin as same', () => {
         // Arrange
         const item: Lookup = { id: '01 ', name: 'name' };
 
